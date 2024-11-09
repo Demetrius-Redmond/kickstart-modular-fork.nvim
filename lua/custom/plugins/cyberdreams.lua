@@ -6,7 +6,11 @@ return {
     opts = {
       transparent = true,
       italic_comments = true,
-      terminal_colors = true,
+      theme = {
+        saturation = 1,
+        colors = {},
+        highlights = {},
+      },
     },
     config = function(_, opts)
       require('cyberdream').setup(opts)
